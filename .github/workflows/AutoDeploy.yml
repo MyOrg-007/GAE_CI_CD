@@ -69,6 +69,7 @@ jobs:
     - name: Current folder2
       run: pwd
 
+    
     - name: Change folder
       run: cd /home/farhantanvir65/GCP-CI-CD
 
