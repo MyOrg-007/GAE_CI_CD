@@ -63,10 +63,16 @@ jobs:
     - name: Current folder
       run: pwd
 
-    - name: Change folder
-      run: cd ../
+    - name: set project
+      run: gcloud config set project ${{ secrets.GCP_PROJECT }}
 
     - name: Current folder2
+      run: pwd
+
+    - name: Change folder
+      run: cd /home/farhantanvir65/GCP-CI-CD
+
+    - name: Current folder3
       run: pwd
 
     - name: npm install, build
