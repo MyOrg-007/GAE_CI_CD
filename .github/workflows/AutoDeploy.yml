@@ -5,6 +5,8 @@ on:
     branches:
       - main
 
+
+
 jobs:
   # build:
   #   name: Build React App
@@ -62,11 +64,10 @@ jobs:
       run: pwd
 
     - name: Change folder
-      run: cd /home/farhantanvir65/GCP-CI-CD
+      run: cd ../
 
     - name: Current folder2
       run: pwd
-
 
     - name: npm install, build
       run: |
