@@ -64,7 +64,7 @@ jobs:
       run: pwd
 
     - name: set project
-      run: gcloud config set project ${{ secrets.GCP_PROJECT }}
+      run: gcloud config set project ${{ secrets.GCR_PROJECT }}
 
     - name: Current folder2
       run: pwd
