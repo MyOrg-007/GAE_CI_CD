@@ -70,8 +70,8 @@ jobs:
       run: pwd
 
     
-    - name: Change folder
-      run: cd /home/farhantanvir65/GCP-CI-CD
+    # - name: Change folder
+    #   run: cd /home/farhantanvir65/GCP-CI-CD
 
     - name: Current folder3
       run: pwd
