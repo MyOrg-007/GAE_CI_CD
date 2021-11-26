@@ -5,7 +5,6 @@ on:
     branches:
       - main
 
-
 jobs:
 
   deploy-gcr:
@@ -22,15 +21,8 @@ jobs:
         service_account_key: ${{ secrets.GCR_SA_KEY }}
         export_default_credentials: true
 
-    - name: Use gcloud CLI
-      run: gcloud info
-
-    - name: Current folder
-      run: pwd
-
     - name: set project
       run: gcloud config set project ${{ secrets.GCR_PROJECT }}
-
 
 
     - name: npm install, build
