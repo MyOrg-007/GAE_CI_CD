@@ -22,6 +22,6 @@ jobs:
         uses: google-github-actions/deploy-appengine@v0.3.1
         with:
           project_id: ${{ secrets.GCR_PROJECT }}
-          deliverables: app-testing.yaml
+          deliverables: app.yaml
           credentials: ${{ secrets.GCR_SA_KEY}}
           version: v1
