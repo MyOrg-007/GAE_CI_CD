@@ -15,7 +15,7 @@ jobs:
       
       #Checking if the app build successfully
       - name: npm install
-        run: npm install && npm run prod
+        run: npm install && npm run build
 
       - name: Deploy an App Engine app
         id: deploy-app
