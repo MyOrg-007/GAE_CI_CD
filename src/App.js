@@ -1,4 +1,4 @@
-import congrats from './congratulation.gif';
+
 import './App.css';
 
 function App() {
