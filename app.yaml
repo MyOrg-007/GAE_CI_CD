@@ -3,7 +3,7 @@ handlers:
   # Serve all static files with url ending with a file extension
   - url: /(.*\..+)$
     static_files: public/\1
-    upload: public/(.*\..+)$
+    upload: build/(.*\..+)$
   # Catch all handler to index.html
   - url: /.*
     script: auto
