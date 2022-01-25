@@ -1,9 +1,9 @@
 runtime: nodejs12
 handlers:
   # Serve all static files with url ending with a file extension
-  - url: /(.*\..+)$
-    static_files: public/\1
-    upload: public/(.*\..+)$
+  # - url: /(.*\..+)$
+  #   static_files: public/\1
+  #   upload: public/(.*\..+)$
   # Catch all handler 
   - url: /.*
     secure: always
