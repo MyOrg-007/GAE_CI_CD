@@ -1,4 +1,4 @@
-name: ci-master-program-front
+name: gae-ci-cd
 on:
   push:
     branches: [main]
