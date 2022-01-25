@@ -1,4 +1,4 @@
-runtime: nodejs16
+runtime: nodejs12
 handlers:
   # Catch all handler 
   - url: /.*
