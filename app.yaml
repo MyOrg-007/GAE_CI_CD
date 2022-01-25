@@ -6,4 +6,4 @@ handlers:
     upload: public/(.*\..+)$
   # Catch all handler to index.js
   - url: /.*
-    static_die: src/index.js
+    static_dir: src/index.js
