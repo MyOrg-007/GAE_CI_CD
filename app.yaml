@@ -4,6 +4,9 @@ handlers:
   - url: /(.*\..+)$
     static_files: public/\1
     upload: public/(.*\..+)$
-  # Catch all handler to index.js
+  # Catch all handler to index.html
   - url: /.*
-    static_dir: src/index.js
+    script: auto
+  # - url: /.*
+  #   static_files: public/index.html
+  #   upload: public/index.html
