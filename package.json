@@ -2,6 +2,10 @@
   "name": "gcp-ci-cd",
   "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "packages/*",
+    "docusaurus/website"
+  ],
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -9,10 +13,10 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "cd packages/react-scripts --openssl-legacy-provider start",
+    "build": "cd packages/react-scripts && node bin/react-scripts.js build",
+    "test": "cd packages/react-scripts test",
+    "eject": "cd packages/react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
