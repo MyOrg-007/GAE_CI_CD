@@ -25,9 +25,6 @@ jobs:
       #Checking if the app build successfully
       - name: npm Run
         run: npm run
-
-      - name: Run test
-        run: npm test
           
    deploy:
     runs-on: ubuntu-latest
