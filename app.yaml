@@ -1,5 +1,5 @@
 runtime: nodejs20
-service: SmartBottle
+service: smart-service
 handlers:
   # Catch all handler 
   - url: /.*
