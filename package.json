@@ -13,8 +13,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "cd packages/react-scripts --openssl-legacy-provider start",
-    "build": "cd packages/react-scripts && node bin/react-scripts.js build",
+    "start": "cd packages/react-scripts start",
+    "build": "cd packages/react-scripts build",
     "test": "cd packages/react-scripts test",
     "eject": "cd packages/react-scripts eject"
   },
